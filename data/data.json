@@ -1,0 +1,84 @@
+{
+  "turmas": {
+    "R8449H1": {
+      "nome": "MATEMATICA",
+      "alunos": [
+        "R8449H1"
+      ],
+      "aulas": [
+        "R8449H1",
+        "R8449H1"
+      ]
+    },
+    "23887822870": {
+      "nome": "INGLES",
+      "alunos": [],
+      "aulas": []
+    },
+    "R8449H2": {
+      "nome": "LINGUAGEM PYTHON",
+      "alunos": [],
+      "aulas": []
+    },
+    "1103": {
+      "nome": "ENG SOFTWARE",
+      "alunos": [
+        "1103",
+        "1107",
+        "878",
+        "55"
+      ],
+      "aulas": [
+        "1103"
+      ]
+    }
+  },
+  "alunos": {
+    "R8449H1": {
+      "nome": "LUCAS DE SOUZA VIEIRA",
+      "turma": "R8449H1",
+      "atividades": [
+        "R8449H1",
+        "R8449H1"
+      ]
+    },
+    "1103": {
+      "nome": "MARIA",
+      "turma": "1103",
+      "atividades": [
+        "R8449H1"
+      ]
+    },
+    "1107": {
+      "nome": "LUIZ",
+      "turma": "1103",
+      "atividades": []
+    },
+    "878": {
+      "nome": "CARLOS",
+      "turma": "1103",
+      "atividades": []
+    },
+    "55": {
+      "nome": "LAURA",
+      "turma": "1103",
+      "atividades": []
+    }
+  },
+  "aulas": {
+    "R8449H1": {
+      "turma": "R8449H1",
+      "conteudo": "PROGRAMACAO EM C"
+    },
+    "1103": {
+      "turma": "1103",
+      "conteudo": "LISTAS KANBAN"
+    }
+  },
+  "atividades": {
+    "R8449H1": {
+      "aluno": "1103",
+      "descricao": "ATIVIDADE LISTAS KANBAN"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+
+@startuml
+actor Usuário
+participant Cliente
+participant Servidor
+participant SistemaAcadêmico
+participant BancoDeDados
+participant "Módulo C" as ModC
+
+Usuário -> Cliente: Envia comando
+Cliente -> Servidor: Solicita operação
+Servidor -> SistemaAcadêmico: Executa ação
+SistemaAcadêmico -> BancoDeDados: Carrega dados
+BancoDeDados --> SistemaAcadêmico: Retorna dados
+SistemaAcadêmico -> ModC: Executa rotina em C (opcional)
+ModC --> SistemaAcadêmico: Resultado
+SistemaAcadêmico -> Servidor: Retorna resposta
+Servidor -> Cliente: Envia resultado
+Cliente -> Usuário: Exibe saída
+@enduml

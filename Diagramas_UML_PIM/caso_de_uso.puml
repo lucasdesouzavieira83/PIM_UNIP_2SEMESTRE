@@ -1,0 +1,21 @@
+
+@startuml
+left to right direction
+actor "Usuário" as user
+actor "Servidor" as server
+
+rectangle "Sistema Acadêmico" {
+  usecase "Gerenciar Alunos" as UC1
+  usecase "Gerenciar Turmas" as UC2
+  usecase "Gerenciar Aulas" as UC3
+  usecase "Gerar Relatórios" as UC4
+  usecase "Executar Rotinas em C" as UC5
+}
+
+user --> UC1
+user --> UC2
+user --> UC3
+user --> UC4
+UC4 --> UC5
+UC5 --> server
+@enduml

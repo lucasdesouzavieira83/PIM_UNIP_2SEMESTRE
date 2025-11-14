@@ -1,0 +1,50 @@
+
+@startuml
+class Aluno {
+  - nome: str
+  - matricula: str
+  - curso: str
+  + exibir_dados()
+}
+
+class Turma {
+  - codigo: str
+  - alunos: list
+  + adicionar_aluno(a: Aluno)
+  + listar_alunos()
+}
+
+class Aula {
+  - tema: str
+  - data: str
+  + exibir_aula()
+}
+
+class SistemaAcademico {
+  - turmas: list
+  + cadastrar_turma()
+  + cadastrar_aluno()
+  + registrar_aula()
+  + gerar_relatorio()
+}
+
+class BancoDeDados {
+  - arquivo: str
+  + salvar_dados()
+  + carregar_dados()
+}
+
+class Cliente {
+  + enviar_comando()
+}
+
+class Servidor {
+  + processar_requisicao()
+}
+
+SistemaAcademico --> BancoDeDados
+Servidor --> SistemaAcademico
+Cliente --> Servidor
+Turma "1" --> "*" Aluno
+Turma "1" --> "*" Aula
+@enduml
